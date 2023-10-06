@@ -1,1 +1,0 @@
-# Lista_deExercicio_02
