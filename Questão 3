@@ -1,0 +1,14 @@
+class Retangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+
+    def calcular_area(self):
+        return self.base * self.altura
+
+# Exemplo de uso da classe Retangulo
+base_do_retangulo = 5
+altura_do_retangulo = 10
+retangulo = Retangulo(base_do_retangulo, altura_do_retangulo)
+area_do_retangulo = retangulo.calcular_area()
+print(f"A área do retângulo com base {base_do_retangulo} e altura {altura_do_retangulo} é {area_do_retangulo}")
