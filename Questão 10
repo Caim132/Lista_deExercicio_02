@@ -1,0 +1,26 @@
+class Funcionario:
+    def __init__(self, nome, salario, cargo):
+        self.nome = nome
+        self.salario = salario
+        self.cargo = cargo
+
+    def aumentar_salario(self, percentual_aumento):
+        if percentual_aumento > 0:
+            aumento = (percentual_aumento / 100) * self.salario
+            self.salario += aumento
+            return f"Salário atualizado para R${self.salario:.2f}"
+        else:
+            return "Percentual de aumento inválido."
+
+# Exemplo de uso da classe Funcionario
+funcionario1 = Funcionario("Alice", 5000, "Analista")
+funcionario2 = Funcionario("Bob", 6000, "Gerente")
+
+print(f"Salário de {funcionario1.nome}: R${funcionario1.salario:.2f}")
+print(f"Salário de {funcionario2.nome}: R${funcionario2.salario:.2f}")
+
+percentual_aumento1 = 10  # 10% de aumento
+percentual_aumento2 = 5   # 5% de aumento
+
+print(funcionario1.aumentar_salario(percentual_aumento1))
+print(funcionario2.aumentar_salario(percentual_aumento2))
