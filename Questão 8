@@ -1,0 +1,18 @@
+class Carro:
+    def __init__(self, marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+
+    def detalhes(self):
+        return f"Carro: {self.marca} {self.modelo}, Ano: {self.ano}"
+
+# Exemplo de uso da classe Carro
+carro1 = Carro("Toyota", "Corolla", 2022)
+carro2 = Carro("Ford", "Focus", 2021)
+
+detalhes_carro1 = carro1.detalhes()
+detalhes_carro2 = carro2.detalhes()
+
+print(detalhes_carro1)  # Saída: Carro: Toyota Corolla, Ano: 2022
+print(detalhes_carro2)  # Saída: Carro: Ford Focus, Ano: 2021
