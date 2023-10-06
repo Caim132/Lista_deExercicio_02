@@ -1,0 +1,12 @@
+class Livro:
+    def __init__(self, titulo, autor):
+        self.titulo = titulo
+        self.autor = autor
+
+    def detalhes(self):
+        return f"Título: {self.titulo}, Autor: {self.autor}"
+
+# Exemplo de uso da classe Livro
+meu_livro = Livro("O Senhor dos Anéis", "J.R.R. Tolkien")
+detalhes_do_livro = meu_livro.detalhes()
+print(detalhes_do_livro)
